@@ -1,6 +1,7 @@
 import React from "react";
 import cl1ck from "./assets/cl1ck.svg";
 import "./App.css";
+import DropdownInput from "./components/DropdownInput";
 
 function App() {
   return (
@@ -237,7 +238,7 @@ function App() {
               alignSelf: "self-start",
             }}
           >
-            Client Info
+            Job/Role
           </span>
           <div
             style={{
@@ -258,7 +259,7 @@ function App() {
                 color: "#949DBC",
               }}
             >
-              Client Name:
+              Job Title:
               <span
                 style={{
                   color: "#EE5555",
@@ -279,7 +280,7 @@ function App() {
                 lineHeight: 1.21,
                 color: "#858CA7",
               }}
-              placeholder="Add client name here"
+              placeholder="Add job title here"
             />
           </div>
           <div
@@ -295,45 +296,7 @@ function App() {
                 color: "#949DBC",
               }}
             >
-              Website:
-              <span
-                style={{
-                  fontWeight: 400,
-                }}
-              >
-                {" "}
-                (optional)
-              </span>
-            </span>
-            <input
-              style={{
-                background: "#FFFFFF",
-                padding: "16px 24px",
-                borderRadius: 16,
-                gap: 10,
-                width: "68%",
-                border: "none",
-                fontSize: 16,
-                lineHeight: 1.21,
-                color: "#858CA7",
-              }}
-              placeholder="Example company.co.id"
-            />
-          </div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-            }}
-          >
-            <span
-              style={{
-                fontWeight: 600,
-                color: "#949DBC",
-              }}
-            >
-              Client info and highlights:
+              Job Description:
               <span
                 style={{
                   color: "#EE5555",
@@ -354,7 +317,139 @@ function App() {
                 lineHeight: 1.21,
                 color: "#858CA7",
               }}
-              placeholder="Add your company info and highlights here"
+              placeholder="Copy the job descriptions"
+            />
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
+            <span
+              style={{
+                fontWeight: 600,
+                color: "#949DBC",
+              }}
+            >
+              Language Requirements (if any):
+              <span
+                style={{
+                  color: "#EE5555",
+                }}
+              >
+                *
+              </span>
+            </span>
+            <DropdownInput />
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
+            <span
+              style={{
+                fontWeight: 600,
+                color: "#949DBC",
+              }}
+            >
+              Regions:
+              <span
+                style={{
+                  color: "#EE5555",
+                }}
+              >
+                *
+              </span>
+            </span>
+            <DropdownInput />
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
+            <span
+              style={{
+                fontWeight: 600,
+                color: "#949DBC",
+              }}
+            >
+              Years of Experience Required:
+              <span
+                style={{
+                  color: "#EE5555",
+                }}
+              >
+                *
+              </span>
+            </span>
+            <DropdownInput />
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
+            <span
+              style={{
+                fontWeight: 600,
+                color: "#949DBC",
+              }}
+            >
+              Specific past company he/she worked for? (optional):
+            </span>
+            <input
+              style={{
+                background: "#FFFFFF",
+                padding: "16px 24px",
+                borderRadius: 16,
+                gap: 10,
+                width: "68%",
+                border: "none",
+                fontSize: 16,
+                lineHeight: 1.21,
+                color: "#858CA7",
+              }}
+              placeholder="Add company here"
+            />
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
+            <span
+              style={{
+                fontWeight: 600,
+                color: "#949DBC",
+              }}
+            >
+              Other requirements? (optional):
+            </span>
+            <input
+              style={{
+                background: "#FFFFFF",
+                padding: "16px 24px",
+                borderRadius: 16,
+                gap: 10,
+                width: "68%",
+                border: "none",
+                fontSize: 16,
+                lineHeight: 1.21,
+                color: "#858CA7",
+              }}
+              placeholder="Add company here"
             />
           </div>
         </div>
